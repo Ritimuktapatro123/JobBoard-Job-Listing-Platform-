@@ -1,0 +1,15 @@
+<h2>Job Listings</h2>
+
+<ul *ngIf="jobs.length > 0; else noJobs">
+  <li *ngFor="let job of jobs" class="job-item">
+    <h3>{{ job.title }}</h3>
+    <p><strong>Company:</strong> {{ job.company }}</p>
+    <p><strong>Location:</strong> {{ job.location }}</p>
+    <p><strong>Description:</strong> {{ job.description }}</p>
+    <hr />
+  </li>
+</ul>
+
+<ng-template #noJobs>
+  <p>No job listings available.</p>
+</ng-template>
