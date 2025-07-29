@@ -41,13 +41,14 @@ JobBoard/
    cd JobBoard_Backend
 2.Create a virtual environment and install dependencies:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
+- pip install cryptography
 
 3.Run migrations and start server:
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py runserver
 
 4.Ensure MySQL is running and your DB settings in settings.py are correct.
 
